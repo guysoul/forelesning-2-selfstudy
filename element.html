@@ -9,12 +9,14 @@
     <ul id="chocolate-list"></ul>
 
     <script>
-      const chocolatesList = document.querySelector("#chocolate-list");
-      const newChocolate = document.createElement("li");
-
+      let chocolatesList = document.querySelector("#chocolate-list");
+      let newChocolate = document.createElement("li");
       newChocolate.innerHTML = "Freia Melkesjokolade";
 
-      chocolatesList.appendChild(newChocolate);
+      let anotherChocolate = document.createElement("li");
+      anotherChocolate.innerHTML = "Smash!";
+
+      chocolatesList.append(newChocolate, anotherChocolate);
     </script>
   </body>
 </html>
